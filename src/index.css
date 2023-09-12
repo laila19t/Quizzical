@@ -1,0 +1,155 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Karla', sans-serif;
+  background: #F5F7FB;
+}
+
+.dialog{
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.dialog>h1{
+  margin: 0;
+  color: #293264;
+  font-size: 1.95313rem;
+  font-weight: 700;
+}
+
+.dialog>h3{
+  margin: 0.4em 0 2rem 0 ;
+  color: #293264;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.dialog>button{
+  border-radius: 15px;
+  background: #4D5B9E;
+  color: #F5F7FB;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  padding: .7rem 2.5rem;
+  cursor: pointer;
+}
+
+.blob-one{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.blob-two{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.question{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin: 0 10px 0rem 30px;
+  color: #293264;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 10;
+  position: relative;
+  margin-top: 25px;
+}
+
+
+.container-choices{
+  z-index: 10;
+  position: relative;
+}
+
+fieldset{
+  border: none;
+  border-bottom: 1px solid #DBDEF0;
+  margin: 0 0 15px 0;
+  padding: .7rem 0 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start
+}
+
+input {
+  visibility:hidden;
+  
+}
+label {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 25px;
+  border: 1px solid #4D5B9E;
+  color: #293264;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  margin: 10px;
+}
+input:checked + label {
+  background: #D6DBF5;
+  border: none
+}
+.check-btn{
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #F5F7FB;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #4D5B9E;
+  border-radius: 15px;
+  border: none;
+  padding: 10px 0;
+}
+
+.finish{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.finish>h3{
+  color: #293264;
+  text-align: center;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  z-index: 10;
+  position: relative;
+}
+
+.finish>button{
+  width: 150px;
+  color: #F5F7FB;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  background: #4D5B9E;
+  border-radius: 15px;
+  border: none;
+  padding: 10px 0;
+}
