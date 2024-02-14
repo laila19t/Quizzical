@@ -15,6 +15,7 @@ export default function Quiz(){
         fetch('https://opentdb.com/api.php?amount=5&difficulty=medium&type=multiple')
             .then(res => res.json())
             .then(data => {
+                console.log('fetched')
                 const questionsArr=[]
                 data.results.forEach(element => {
                     const choices = element.incorrect_answers
